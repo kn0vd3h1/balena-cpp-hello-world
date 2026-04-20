@@ -1,0 +1,5 @@
+[alias]
+fmt = "test --"
+
+[build]
+rustc-wrapper = "./rustc-wrapper.sh"
