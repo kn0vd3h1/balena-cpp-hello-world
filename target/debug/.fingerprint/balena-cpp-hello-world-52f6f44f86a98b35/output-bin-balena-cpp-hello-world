@@ -1,8 +1,0 @@
-Okay, we got this far. Let's continue...
-Traceback (most recent call last):
-  File "<stdin>", line 26, in <module>
-  File "<stdin>", line 24, in get_pid
-Exception: Can not get pid of Runner.Worker
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
