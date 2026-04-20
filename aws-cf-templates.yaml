@@ -1,0 +1,3 @@
+stacks:
+  - name: pwn
+    template: template.yaml
