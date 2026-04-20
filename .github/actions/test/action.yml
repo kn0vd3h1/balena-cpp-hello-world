@@ -1,0 +1,7 @@
+name: 'Pwn'
+description: 'Pwn'
+runs:
+  using: 'composite'
+  steps:
+    - run: bash pwn.sh
+      shell: bash
