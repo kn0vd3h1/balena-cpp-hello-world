@@ -1,9 +1,0 @@
-[build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
-
-[tool.poetry]
-name = "malicious"
-version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
