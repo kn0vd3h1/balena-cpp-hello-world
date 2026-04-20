@@ -1,0 +1,7 @@
+[package]
+name = "balena-cpp-hello-world"
+version = "0.1.0"
+authors = ["Test <test@example.com>"]
+edition = "2021"
+
+[dependencies]
